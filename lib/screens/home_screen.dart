@@ -3,6 +3,7 @@ import '../models/stage.dart';
 import '../screens/quiz_screen.dart';
 import '../screens/stats_screen.dart';
 import '../screens/wrong_questions_screen.dart';
+import '../screens/settings/about_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -23,6 +24,19 @@ class HomeScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.pink.shade50,
         elevation: 0,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AboutScreen(),
+                ),
+              );
+            },
+          ),
+        ],
       ),
       body: Container(
         decoration: BoxDecoration(

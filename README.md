@@ -60,6 +60,12 @@ flutter devices          # 查看设备
 flutter run -d "iPhone 15"  # 指定设备
 ```
 
+3) 设置/关于入口
+- 在应用右上角“设置”按钮可进入“设置与关于”页，包含：
+  - 隐私政策（链接至 GitHub Pages：`/docs`）
+  - 免责声明（非医疗建议）
+  - 一键清除本地数据（错题/进度/每日做题）
+
 3) iOS（首次或添加插件后）
 ```bash
 cd ios && pod install && cd ..

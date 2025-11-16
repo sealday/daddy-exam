@@ -93,5 +93,13 @@ class StorageService {
     
     return daily[today] as int? ?? 0;
   }
+
+  // 一键清除本地数据（进度、错题、每日做题数）
+  static Future<void> clearAll() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_wrongQuestionsKey);
+    await prefs.remove(_stageProgressKey);
+    await prefs.remove(_dailyQuestionsKey);
+  }
 }
 
