@@ -12,7 +12,7 @@ class AboutScreen extends StatelessWidget {
 
   // TODO: 将该链接替换为你启用 GitHub Pages 后的实际地址
   static const String privacyUrl =
-      'https://<your-username>.github.io/<your-repo>/privacy-policy.zh';
+      'https://sealday.github.io/daddy-exam/privacy-policy.zh';
 
   Future<void> _openPrivacy() async {
     final uri = Uri.parse(privacyUrl);
